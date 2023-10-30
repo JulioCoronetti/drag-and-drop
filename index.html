@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>Drag and Drop🤠</h1>
+    <section id="flex">
+        <section id="images">
+            <img src="img/sesi.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100px">
+
+            <img src="img/senai.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100px">
+
+            <img src="img/fiesp.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100px">
+        </section>
+
+        <section id="divs">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <p></p>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <p></p>
+
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </section>
+
+        <section id="textos">
+            <p>A **** é uma instituição de ensino que busca formar cidadãos participantes, capazes de qualificar relações pessoais, sociais e ambientais.</p>
+
+            <p>O ***** tem como desafio prover educação profissional e superior, serviços tecnológicos e soluções em pesquisa, desenvolvimento e inovação com o propósito de apoiar a indústria nacional.</p>
+
+            <p>A ***** tem como objetivo representar o setor industrial do Estado, exercendo uma forte influência política. A sua finalidade é fomentar a atividade industrial, buscando mais competitividade.</p>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
